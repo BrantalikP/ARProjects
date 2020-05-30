@@ -17,6 +17,10 @@
 		C1D4C5272482B4C60096E3C8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C5262482B4C60096E3C8 /* Route.swift */; };
 		C1D4C5292482B78D0096E3C8 /* BasicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C5282482B78D0096E3C8 /* BasicsVC.swift */; };
 		C1D4C52B2482BB930096E3C8 /* VirtualTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */; };
+		C1D4C52D2482BECF0096E3C8 /* MultipleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C52C2482BECF0096E3C8 /* MultipleVC.swift */; };
+		C1ED16022482C0DC0092A7BD /* wood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C1ED16012482C0DC0092A7BD /* wood.jpeg */; };
+		C1ED16042482C0E30092A7BD /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1ED16032482C0E30092A7BD /* earth.jpg */; };
+		C1ED16062482C2B90092A7BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED16052482C2B90092A7BD /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		C1D4C5262482B4C60096E3C8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		C1D4C5282482B78D0096E3C8 /* BasicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsVC.swift; sourceTree = "<group>"; };
 		C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualTextVC.swift; sourceTree = "<group>"; };
+		C1D4C52C2482BECF0096E3C8 /* MultipleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleVC.swift; sourceTree = "<group>"; };
+		C1ED16012482C0DC0092A7BD /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpeg; sourceTree = "<group>"; };
+		C1ED16032482C0E30092A7BD /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
+		C1ED16052482C2B90092A7BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 		C1D4C5082482B2830096E3C8 /* ARProjects */ = {
 			isa = PBXGroup;
 			children = (
+				C1ED15FF2482C0B00092A7BD /* Resources */,
 				C1D4C5232482B41A0096E3C8 /* Utilities */,
 				C1D4C5202482B2AE0096E3C8 /* Support Files */,
 				C1D4C51F2482B2A60096E3C8 /* View */,
@@ -92,6 +101,7 @@
 				C1D4C5212482B2E10096E3C8 /* MainVC.swift */,
 				C1D4C5282482B78D0096E3C8 /* BasicsVC.swift */,
 				C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */,
+				C1D4C52C2482BECF0096E3C8 /* MultipleVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,8 +125,26 @@
 			isa = PBXGroup;
 			children = (
 				C1D4C5242482B42B0096E3C8 /* Constants.swift */,
+				C1ED16052482C2B90092A7BD /* Extensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C1ED15FF2482C0B00092A7BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1ED16002482C0BC0092A7BD /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1ED16002482C0BC0092A7BD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C1ED16032482C0E30092A7BD /* earth.jpg */,
+				C1ED16012482C0DC0092A7BD /* wood.jpeg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,7 +205,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1ED16022482C0DC0092A7BD /* wood.jpeg in Resources */,
 				C1D4C50C2482B2830096E3C8 /* art.scnassets in Resources */,
+				C1ED16042482C0E30092A7BD /* earth.jpg in Resources */,
 				C1D4C5162482B2840096E3C8 /* LaunchScreen.storyboard in Resources */,
 				C1D4C5132482B2840096E3C8 /* Assets.xcassets in Resources */,
 				C1D4C5112482B2830096E3C8 /* Main.storyboard in Resources */,
@@ -194,6 +224,8 @@
 				C1D4C5222482B2E10096E3C8 /* MainVC.swift in Sources */,
 				C1D4C50A2482B2830096E3C8 /* AppDelegate.swift in Sources */,
 				C1D4C5272482B4C60096E3C8 /* Route.swift in Sources */,
+				C1ED16062482C2B90092A7BD /* Extensions.swift in Sources */,
+				C1D4C52D2482BECF0096E3C8 /* MultipleVC.swift in Sources */,
 				C1D4C52B2482BB930096E3C8 /* VirtualTextVC.swift in Sources */,
 				C1D4C5252482B42B0096E3C8 /* Constants.swift in Sources */,
 				C1D4C5292482B78D0096E3C8 /* BasicsVC.swift in Sources */,

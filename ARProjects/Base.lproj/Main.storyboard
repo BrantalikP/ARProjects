@@ -47,6 +47,7 @@
                     <connections>
                         <segue destination="BV1-FR-VrT" kind="presentation" identifier="moveToBasics" modalPresentationStyle="fullScreen" id="vfr-zw-DeG"/>
                         <segue destination="WBO-5T-pub" kind="presentation" identifier="moveToVirtualText" modalPresentationStyle="fullScreen" id="MEW-do-Pmc"/>
+                        <segue destination="KeK-KW-BB5" kind="presentation" identifier="moveToMultipleObjects" modalPresentationStyle="fullScreen" id="dg8-iE-vU4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmI-ya-4ad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,7 +170,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VFM-vz-sD6" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1935" y="149"/>
+            <point key="canvasLocation" x="1946" y="139"/>
+        </scene>
+        <!--MultipleVC-->
+        <scene sceneID="yib-uT-ny5">
+            <objects>
+                <viewController id="KeK-KW-BB5" customClass="MultipleVC" customModule="ARProjects" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5gN-P3-nqj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Fx-Vg-C67">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KeK-KW-BB5" id="xZ9-4h-K1T"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vya-6x-Hvi">
+                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="YWB-8b-tFf"/>
+                                    <constraint firstAttribute="height" constant="30" id="ZMl-8H-oMs"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="KeK-KW-BB5" eventType="touchUpInside" id="1fE-n6-Cgc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1Fx-Vg-C67" firstAttribute="top" secondItem="5gN-P3-nqj" secondAttribute="top" id="3jr-Yd-hGb"/>
+                            <constraint firstItem="Vya-6x-Hvi" firstAttribute="leading" secondItem="Ypb-cO-JUD" secondAttribute="leading" constant="20" id="Up8-6l-LJJ"/>
+                            <constraint firstItem="1Fx-Vg-C67" firstAttribute="leading" secondItem="Ypb-cO-JUD" secondAttribute="leading" id="caL-Uw-yjC"/>
+                            <constraint firstItem="1Fx-Vg-C67" firstAttribute="trailing" secondItem="Ypb-cO-JUD" secondAttribute="trailing" id="mRf-2P-9ZJ"/>
+                            <constraint firstItem="Vya-6x-Hvi" firstAttribute="top" secondItem="Ypb-cO-JUD" secondAttribute="top" constant="20" id="oB4-SR-ikW"/>
+                            <constraint firstItem="1Fx-Vg-C67" firstAttribute="bottom" secondItem="Ypb-cO-JUD" secondAttribute="bottom" id="stp-X2-04F"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ypb-cO-JUD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m12-EE-SRg"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="sceneView" destination="1Fx-Vg-C67" id="n6I-9H-Rne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Cn-SS-5Ha" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2714" y="139"/>
         </scene>
     </scenes>
     <resources>
