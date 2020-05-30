@@ -1,5 +1,5 @@
 //
-//  BasicsVC.swift
+//  VirtualTextVC.swift
 //  ARProjects
 //
 //  Created by Petr Brantalík on 30/05/2020.
@@ -10,9 +10,9 @@ import UIKit
 import SceneKit
 import ARKit
 
-class BasicsVC: UIViewController, ARSCNViewDelegate {
+class VirtualTextVC: UIViewController, ARSCNViewDelegate {
 
-    @IBOutlet var sceneView: ARSCNView!
+     @IBOutlet var sceneView: ARSCNView!
         
         override func viewDidLoad() {
             super.viewDidLoad()
@@ -29,17 +29,14 @@ class BasicsVC: UIViewController, ARSCNViewDelegate {
             // Set the scene to the view
             sceneView.scene = scene
             
-            let box = SCNBox(width: 0.3, height: 0.3, length: 0.3, chamferRadius: 0)
+            let text = SCNText(string: "Hello ARkit", extrusionDepth: 1.0)
+            text.firstMaterial?.diffuse.contents = UIColor.blue
             
-            let material = SCNMaterial()
-            material.diffuse.contents = UIColor.red
+            let textNode = SCNNode(geometry: text)
+            textNode.position = SCNVector3(0, 0, -0.5)
+            textNode.scale = SCNVector3(0.02, 0.02, 0.02)
             
-            box.materials = [material]
-            
-            let boxNode = SCNNode(geometry: box)
-            boxNode.position = SCNVector3(0, 0, -0.5)
-            
-            self.sceneView.scene.rootNode.addChildNode(boxNode)
+            self.sceneView.scene.rootNode.addChildNode(textNode)
         }
         
         override func viewWillAppear(_ animated: Bool) {
@@ -65,7 +62,4 @@ class BasicsVC: UIViewController, ARSCNViewDelegate {
     }
     
         
-     
-
-
 }

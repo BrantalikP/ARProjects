@@ -10,7 +10,7 @@ import UIKit
 
 class MainVC: UIViewController {
     
-    var routes: [Route] = [Route(name: "Basics", segueId: K.basicsSegue)]
+    var routes: [Route] = [Route(name: "Basics", segueId: K.basicsSegue),Route(name: "VirtualText", segueId: K.virtualTextSegue)]
 
     override func viewDidLoad() {
         super.viewDidLoad()

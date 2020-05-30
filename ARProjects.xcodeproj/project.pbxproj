@@ -16,6 +16,7 @@
 		C1D4C5252482B42B0096E3C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C5242482B42B0096E3C8 /* Constants.swift */; };
 		C1D4C5272482B4C60096E3C8 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C5262482B4C60096E3C8 /* Route.swift */; };
 		C1D4C5292482B78D0096E3C8 /* BasicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C5282482B78D0096E3C8 /* BasicsVC.swift */; };
+		C1D4C52B2482BB930096E3C8 /* VirtualTextVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C1D4C5242482B42B0096E3C8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C1D4C5262482B4C60096E3C8 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		C1D4C5282482B78D0096E3C8 /* BasicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicsVC.swift; sourceTree = "<group>"; };
+		C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualTextVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				C1D4C5212482B2E10096E3C8 /* MainVC.swift */,
 				C1D4C5282482B78D0096E3C8 /* BasicsVC.swift */,
+				C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				C1D4C5222482B2E10096E3C8 /* MainVC.swift in Sources */,
 				C1D4C50A2482B2830096E3C8 /* AppDelegate.swift in Sources */,
 				C1D4C5272482B4C60096E3C8 /* Route.swift in Sources */,
+				C1D4C52B2482BB930096E3C8 /* VirtualTextVC.swift in Sources */,
 				C1D4C5252482B42B0096E3C8 /* Constants.swift in Sources */,
 				C1D4C5292482B78D0096E3C8 /* BasicsVC.swift in Sources */,
 			);
