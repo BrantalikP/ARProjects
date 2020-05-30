@@ -49,6 +49,7 @@
                         <segue destination="WBO-5T-pub" kind="presentation" identifier="moveToVirtualText" modalPresentationStyle="fullScreen" id="MEW-do-Pmc"/>
                         <segue destination="KeK-KW-BB5" kind="presentation" identifier="moveToMultipleObjects" modalPresentationStyle="fullScreen" id="dg8-iE-vU4"/>
                         <segue destination="Wnp-ml-nXR" kind="presentation" identifier="moveToPlanes" modalPresentationStyle="fullScreen" id="omw-TI-ruM"/>
+                        <segue destination="1g8-gG-ka7" kind="presentation" identifier="moveToOverlayPlane" modalPresentationStyle="fullScreen" id="F9g-HC-fZG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmI-ya-4ad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -272,6 +273,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dh3-yd-Clt" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3458" y="139"/>
+        </scene>
+        <!--Overlay PlaneVC-->
+        <scene sceneID="FTQ-aS-7ht">
+            <objects>
+                <viewController id="1g8-gG-ka7" customClass="OverlayPlaneVC" customModule="ARProjects" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JR5-pC-7DC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUe-QH-JOY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1g8-gG-ka7" id="zeq-wU-sCW"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32g-mp-BQY">
+                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1hb-8z-prj"/>
+                                    <constraint firstAttribute="width" constant="30" id="9fc-o0-3ds"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="1g8-gG-ka7" eventType="touchUpInside" id="AkV-2r-pSc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KUe-QH-JOY" firstAttribute="leading" secondItem="xEj-jS-D5E" secondAttribute="leading" id="8DB-EQ-BP1"/>
+                            <constraint firstItem="32g-mp-BQY" firstAttribute="leading" secondItem="xEj-jS-D5E" secondAttribute="leading" constant="20" id="EE2-4W-lcp"/>
+                            <constraint firstItem="KUe-QH-JOY" firstAttribute="bottom" secondItem="xEj-jS-D5E" secondAttribute="bottom" id="K45-QI-uSi"/>
+                            <constraint firstItem="KUe-QH-JOY" firstAttribute="trailing" secondItem="xEj-jS-D5E" secondAttribute="trailing" id="Y6z-4w-kVQ"/>
+                            <constraint firstItem="32g-mp-BQY" firstAttribute="top" secondItem="xEj-jS-D5E" secondAttribute="top" constant="20" id="foU-BK-rFf"/>
+                            <constraint firstItem="KUe-QH-JOY" firstAttribute="top" secondItem="JR5-pC-7DC" secondAttribute="top" id="qfd-OZ-nzh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xEj-jS-D5E"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SrG-fJ-mnC"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="sceneView" destination="KUe-QH-JOY" id="Pf3-FE-Q1d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2q0-bd-XHt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4235" y="139"/>
         </scene>
     </scenes>
     <resources>

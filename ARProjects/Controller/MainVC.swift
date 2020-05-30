@@ -10,7 +10,7 @@ import UIKit
 
 class MainVC: UIViewController {
     
-    var routes: [Route] = [Route(name: "Basics", segueId: K.basicsSegue),Route(name: "VirtualText", segueId: K.virtualTextSegue),Route(name: "Multiple Objects", segueId: K.multipleSegue),Route(name: "Planes", segueId: K.planesSegue)]
+    var routes: [Route] = [Route(name: "Basics", segueId: K.basicsSegue),Route(name: "VirtualText", segueId: K.virtualTextSegue),Route(name: "Multiple Objects", segueId: K.multipleSegue),Route(name: "Planes", segueId: K.planesSegue),Route(name: "Overlay Plane", segueId: K.overlayPlane)]
 
     override func viewDidLoad() {
         super.viewDidLoad()

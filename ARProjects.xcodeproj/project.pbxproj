@@ -22,6 +22,9 @@
 		C1ED16042482C0E30092A7BD /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1ED16032482C0E30092A7BD /* earth.jpg */; };
 		C1ED16062482C2B90092A7BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED16052482C2B90092A7BD /* Extensions.swift */; };
 		C1ED160A2482C6CA0092A7BD /* PlanesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED16092482C6CA0092A7BD /* PlanesVC.swift */; };
+		C1ED160C2482CB3D0092A7BD /* overlay_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = C1ED160B2482CB3D0092A7BD /* overlay_grid.png */; };
+		C1ED160E2482CB450092A7BD /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED160D2482CB450092A7BD /* OverlayPlane.swift */; };
+		C1ED16102482CB780092A7BD /* OverlayPlaneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED160F2482CB780092A7BD /* OverlayPlaneVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		C1ED16032482C0E30092A7BD /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		C1ED16052482C2B90092A7BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C1ED16092482C6CA0092A7BD /* PlanesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanesVC.swift; sourceTree = "<group>"; };
+		C1ED160B2482CB3D0092A7BD /* overlay_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_grid.png; sourceTree = "<group>"; };
+		C1ED160D2482CB450092A7BD /* OverlayPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
+		C1ED160F2482CB780092A7BD /* OverlayPlaneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlaneVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C1D4C5262482B4C60096E3C8 /* Route.swift */,
+				C1ED160D2482CB450092A7BD /* OverlayPlane.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 				C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */,
 				C1D4C52C2482BECF0096E3C8 /* MultipleVC.swift */,
 				C1ED16092482C6CA0092A7BD /* PlanesVC.swift */,
+				C1ED160F2482CB780092A7BD /* OverlayPlaneVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 		C1ED16002482C0BC0092A7BD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C1ED160B2482CB3D0092A7BD /* overlay_grid.png */,
 				C1ED16032482C0E30092A7BD /* earth.jpg */,
 				C1ED16012482C0DC0092A7BD /* wood.jpeg */,
 			);
@@ -213,6 +222,7 @@
 				C1ED16042482C0E30092A7BD /* earth.jpg in Resources */,
 				C1D4C5162482B2840096E3C8 /* LaunchScreen.storyboard in Resources */,
 				C1D4C5132482B2840096E3C8 /* Assets.xcassets in Resources */,
+				C1ED160C2482CB3D0092A7BD /* overlay_grid.png in Resources */,
 				C1D4C5112482B2830096E3C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1ED16102482CB780092A7BD /* OverlayPlaneVC.swift in Sources */,
 				C1D4C5222482B2E10096E3C8 /* MainVC.swift in Sources */,
 				C1D4C50A2482B2830096E3C8 /* AppDelegate.swift in Sources */,
 				C1D4C5272482B4C60096E3C8 /* Route.swift in Sources */,
@@ -233,6 +244,7 @@
 				C1D4C5252482B42B0096E3C8 /* Constants.swift in Sources */,
 				C1ED160A2482C6CA0092A7BD /* PlanesVC.swift in Sources */,
 				C1D4C5292482B78D0096E3C8 /* BasicsVC.swift in Sources */,
+				C1ED160E2482CB450092A7BD /* OverlayPlane.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
