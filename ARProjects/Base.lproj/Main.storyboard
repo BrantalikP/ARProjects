@@ -48,6 +48,7 @@
                         <segue destination="BV1-FR-VrT" kind="presentation" identifier="moveToBasics" modalPresentationStyle="fullScreen" id="vfr-zw-DeG"/>
                         <segue destination="WBO-5T-pub" kind="presentation" identifier="moveToVirtualText" modalPresentationStyle="fullScreen" id="MEW-do-Pmc"/>
                         <segue destination="KeK-KW-BB5" kind="presentation" identifier="moveToMultipleObjects" modalPresentationStyle="fullScreen" id="dg8-iE-vU4"/>
+                        <segue destination="Wnp-ml-nXR" kind="presentation" identifier="moveToPlanes" modalPresentationStyle="fullScreen" id="omw-TI-ruM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmI-ya-4ad" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -221,6 +222,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Cn-SS-5Ha" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2714" y="139"/>
+        </scene>
+        <!--PlanesVC-->
+        <scene sceneID="f7P-Iv-0br">
+            <objects>
+                <viewController id="Wnp-ml-nXR" customClass="PlanesVC" customModule="ARProjects" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GQe-me-R9p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfT-rf-Yom">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Wnp-ml-nXR" id="Uwc-zf-j6e"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NT-iU-e5S">
+                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Un4-7t-TxE"/>
+                                    <constraint firstAttribute="width" constant="30" id="u7U-g0-8nm"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="Wnp-ml-nXR" eventType="touchUpInside" id="AIL-nQ-vPJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hfT-rf-Yom" firstAttribute="trailing" secondItem="MNI-7e-BQa" secondAttribute="trailing" id="84v-MU-pxW"/>
+                            <constraint firstItem="hfT-rf-Yom" firstAttribute="top" secondItem="GQe-me-R9p" secondAttribute="top" id="M1h-ZB-7IV"/>
+                            <constraint firstItem="0NT-iU-e5S" firstAttribute="top" secondItem="MNI-7e-BQa" secondAttribute="top" constant="20" id="RgJ-3r-QUj"/>
+                            <constraint firstItem="0NT-iU-e5S" firstAttribute="leading" secondItem="MNI-7e-BQa" secondAttribute="leading" constant="20" id="Spn-gB-vBt"/>
+                            <constraint firstItem="hfT-rf-Yom" firstAttribute="bottom" secondItem="MNI-7e-BQa" secondAttribute="bottom" id="aSK-dL-FDx"/>
+                            <constraint firstItem="hfT-rf-Yom" firstAttribute="leading" secondItem="MNI-7e-BQa" secondAttribute="leading" id="ztU-I0-h6z"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MNI-7e-BQa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wKN-O2-B8U"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="sceneView" destination="hfT-rf-Yom" id="Dcc-aB-3Yy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dh3-yd-Clt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3458" y="139"/>
         </scene>
     </scenes>
     <resources>

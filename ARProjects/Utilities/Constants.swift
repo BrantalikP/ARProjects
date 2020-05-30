@@ -12,4 +12,5 @@ class K {
     static let basicsSegue = "moveToBasics"
     static let virtualTextSegue = "moveToVirtualText"
     static let multipleSegue = "moveToMultipleObjects"
+    static let planesSegue = "moveToPlanes"
 }

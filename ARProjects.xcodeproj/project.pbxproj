@@ -21,6 +21,7 @@
 		C1ED16022482C0DC0092A7BD /* wood.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C1ED16012482C0DC0092A7BD /* wood.jpeg */; };
 		C1ED16042482C0E30092A7BD /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1ED16032482C0E30092A7BD /* earth.jpg */; };
 		C1ED16062482C2B90092A7BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED16052482C2B90092A7BD /* Extensions.swift */; };
+		C1ED160A2482C6CA0092A7BD /* PlanesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ED16092482C6CA0092A7BD /* PlanesVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C1ED16012482C0DC0092A7BD /* wood.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wood.jpeg; sourceTree = "<group>"; };
 		C1ED16032482C0E30092A7BD /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earth.jpg; sourceTree = "<group>"; };
 		C1ED16052482C2B90092A7BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C1ED16092482C6CA0092A7BD /* PlanesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanesVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +74,12 @@
 		C1D4C5082482B2830096E3C8 /* ARProjects */ = {
 			isa = PBXGroup;
 			children = (
+				C1D4C51D2482B2990096E3C8 /* Model */,
+				C1D4C51F2482B2A60096E3C8 /* View */,
+				C1D4C51E2482B2A00096E3C8 /* Controller */,
 				C1ED15FF2482C0B00092A7BD /* Resources */,
 				C1D4C5232482B41A0096E3C8 /* Utilities */,
 				C1D4C5202482B2AE0096E3C8 /* Support Files */,
-				C1D4C51F2482B2A60096E3C8 /* View */,
-				C1D4C51E2482B2A00096E3C8 /* Controller */,
-				C1D4C51D2482B2990096E3C8 /* Model */,
 				C1D4C50B2482B2830096E3C8 /* art.scnassets */,
 				C1D4C50F2482B2830096E3C8 /* Main.storyboard */,
 				C1D4C5122482B2840096E3C8 /* Assets.xcassets */,
@@ -102,6 +104,7 @@
 				C1D4C5282482B78D0096E3C8 /* BasicsVC.swift */,
 				C1D4C52A2482BB930096E3C8 /* VirtualTextVC.swift */,
 				C1D4C52C2482BECF0096E3C8 /* MultipleVC.swift */,
+				C1ED16092482C6CA0092A7BD /* PlanesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				C1D4C52D2482BECF0096E3C8 /* MultipleVC.swift in Sources */,
 				C1D4C52B2482BB930096E3C8 /* VirtualTextVC.swift in Sources */,
 				C1D4C5252482B42B0096E3C8 /* Constants.swift in Sources */,
+				C1ED160A2482C6CA0092A7BD /* PlanesVC.swift in Sources */,
 				C1D4C5292482B78D0096E3C8 /* BasicsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
