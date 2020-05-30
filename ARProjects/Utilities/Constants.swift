@@ -13,5 +13,6 @@ class K {
     static let virtualTextSegue = "moveToVirtualText"
     static let multipleSegue = "moveToMultipleObjects"
     static let planesSegue = "moveToPlanes"
-    static let overlayPlane = "moveToOverlayPlane"
+    static let overlayPlaneSegue = "moveToOverlayPlane"
+    
 }

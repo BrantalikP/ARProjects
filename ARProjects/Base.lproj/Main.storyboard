@@ -324,6 +324,56 @@
             </objects>
             <point key="canvasLocation" x="4235" y="139"/>
         </scene>
+        <!--Overlay PlaneVC-->
+        <scene sceneID="PbP-7Z-L3n">
+            <objects>
+                <viewController id="xGO-3c-8Wi" customClass="OverlayPlaneVC" customModule="ARProjects" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W7q-Op-cWO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ut-JQ-B3Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <connections>
+                                    <outlet property="delegate" destination="xGO-3c-8Wi" id="afT-Zc-2Dk"/>
+                                </connections>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="miX-9L-4eD">
+                                <rect key="frame" x="20" y="64" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="199-8M-gaN"/>
+                                    <constraint firstAttribute="height" constant="30" id="gA2-BG-B4I"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <state key="normal" image="xmark" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="xGO-3c-8Wi" eventType="touchUpInside" id="eez-sn-xTh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Ut-JQ-B3Y" firstAttribute="top" secondItem="W7q-Op-cWO" secondAttribute="top" id="9Rh-Q1-Ms1"/>
+                            <constraint firstItem="miX-9L-4eD" firstAttribute="top" secondItem="6O1-gf-VVJ" secondAttribute="top" constant="20" id="AkU-B9-AXS"/>
+                            <constraint firstItem="3Ut-JQ-B3Y" firstAttribute="leading" secondItem="6O1-gf-VVJ" secondAttribute="leading" id="Kye-uU-geY"/>
+                            <constraint firstItem="3Ut-JQ-B3Y" firstAttribute="trailing" secondItem="6O1-gf-VVJ" secondAttribute="trailing" id="Mgt-Iu-GqL"/>
+                            <constraint firstItem="miX-9L-4eD" firstAttribute="leading" secondItem="6O1-gf-VVJ" secondAttribute="leading" constant="20" id="OdA-9U-FYY"/>
+                            <constraint firstItem="3Ut-JQ-B3Y" firstAttribute="bottom" secondItem="6O1-gf-VVJ" secondAttribute="bottom" id="QHe-4c-zeh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6O1-gf-VVJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xQ5-1o-aaK"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="sceneView" destination="3Ut-JQ-B3Y" id="ytb-9D-wg2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5vl-pQ-SBR" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4235" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="xmark" catalog="system" width="128" height="113"/>
